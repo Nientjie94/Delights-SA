@@ -14,8 +14,15 @@ function RecipesPage(props) {
 
     return (
         <>
-            <h1>{/* { router.query.recipesId} */}</h1>
-            <RecipeCard image={props.recipe.image} ingredients={props.recipe.ingredients} instructions={props.recipe.instructions} title={props.recipe.title} />
+            <div class="container">
+                <div class="header">
+                    <h1>{/* { router.query.recipesId} */}</h1>
+                </div>
+                <div class="recipe-card">
+                    <RecipeCard image={props.recipe.image} ingredients={props.recipe.ingredients} instructions={props.recipe.instructions} title={props.recipe.title} />
+                </div>
+            </div>
+
         </>
 
     )

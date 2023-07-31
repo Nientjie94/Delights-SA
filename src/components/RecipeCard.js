@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const RecipeCard = ({ title, ingredients, instructions, image }) => {
   return (
@@ -15,18 +15,18 @@ const RecipeCard = ({ title, ingredients, instructions, image }) => {
       <h3>Instructions:</h3>
       <ol>
         {instructions.map((step, index) => (
-          <li key={index}>{step}</li>
+          <li key={index + 'step'}>{step}</li>
         ))}
       </ol>
     </div>
   );
 };
 
-RecipeCard.propTypes = {
+/*RecipeCard.propTypes = {
   title: PropTypes.string.isRequired,
   ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
   instructions: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string,
-};
+};*/
 
 export default RecipeCard;

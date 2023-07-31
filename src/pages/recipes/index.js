@@ -3,30 +3,41 @@ import styles from '../../syles/Home.module.css'
 import Link from 'next/link'
 import { Fragment } from "react";
 
-const recipesList = [
+export const recipesList = [
     {
-        id: 'milktart',
-        title: 'milktart-recipe',
+        id: 'milktart-recipe',
+        title: 'Milktart',
         image: 'https://i.pinimg.com/564x/6e/38/54/6e3854dc81b843ee5d7bf0141d5c10e2.jpg',
-        description: 'A South African dessert consisting of a creamy custard filling flavored with cinnamon, poured into a pastry crust, and dusted with cinnamon on top.,'
+        description: 'A South African dessert consisting of a creamy custard filling flavored with cinnamon, poured into a pastry crust, and dusted with cinnamon on top.,',
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        instructions: ['step one','step two']
     },
     {
-        id: 'koeksisters',
-        title: 'koeksisters-recipe',
+        id: 'koeksisters-recipe',
+        title: 'Koeksusters',
         image: 'https://i.pinimg.com/564x/a8/84/53/a884530c10a6ccf66ce315c7e44d5227.jpg',
-        description: 'A traditional South African sweet treat made from fried dough, soaked in syrup, and braided into a twisted shape, offering a sticky and delightful indulgence.'
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        description: 'A traditional South African sweet treat made from fried dough, soaked in syrup, and braided into a twisted shape, offering a sticky and delightful indulgence.',
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        instructions: ['step one','step two']
     },
     {
-        id: 'peppermint',
-        title: 'Peppermint-Crisp-recipe',
+        id: 'Peppermint-Crisp-recipe',
+        title: 'Peppermint Crisp',
         image: 'https://i.pinimg.com/564x/a4/b2/71/a4b2718876dae62229bca36f608f7b7b.jpg',
-        description: 'A classic South African dessert featuring layers of Tennis biscuits, whipped cream, and caramelized condensed milk, topped with peppermint chocolate for a refreshing and satisfying treat.'
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        description: 'A classic South African dessert featuring layers of Tennis biscuits, whipped cream, and caramelized condensed milk, topped with peppermint chocolate for a refreshing and satisfying treat.',
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        instructions: ['step one','step two']
     },
     {
-        id: 'malva',
-        title: 'malva-pudding-recipe',
+        id: 'malva-pudding-recipe',
+        title: 'Malva Pudding',
         image: 'https://i.pinimg.com/564x/ab/70/69/ab7069454ecb91b4e90595babc94ce67.jpg',
-        description: 'A rich and moist South African dessert made with apricot jam, served warm and drenched in a sticky toffee sauce, providing a comforting and decadent culinary experience.'
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        description: 'A rich and moist South African dessert made with apricot jam, served warm and drenched in a sticky toffee sauce, providing a comforting and decadent culinary experience.',
+        ingredients:['ingred1', 'ingred2', 'ingred3', 'ingred4', 'ingred5', ],
+        instructions: ['step one','step two']
     },
 
 ]
@@ -50,31 +61,15 @@ export default function RecipesSelection() {
                 </p>
 
                 <div className={styles.grid}>
-                    <Link  href="/recipes/milktart-recipe" className={styles.card}>
-                        <h3>Milktart </h3>
-                        <p></p>
-                    </Link>
-
-                    <Link href="/recipes/koeksisters-recipe" className={styles.card}>
-                        <h3>Koeksisters</h3>
-                        <p></p>
-                    </Link>
-
-                    <Link
-                        href="/recipes/malva-pudding-recipe"
-                        className={styles.card}
-                    >
-                        <h3>Malva Pudding</h3>
-                        <p></p>
-                    </Link>
-
-                    <Link
-                        href="/recipes/peppermint-crisp-tart-recipe"
-                        className={styles.card}
-                    >
-                        <h3>Peppermint Crisp Tart</h3>
-                        <p></p>
-                    </Link>
+                    {
+                        recipesList.map(
+                            (x, i) =>
+                                <Link id={'re' + i}  href={'/recipes/' + x.id} className={styles.card}>
+                                    <h3>{x.title} </h3>
+                                    <p>{x.description}</p>
+                                </Link>
+                        )
+                    }
                 </div>
             </main>
 

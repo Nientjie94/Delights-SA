@@ -46,7 +46,8 @@ export const recipesList = [
         ],
         instructions: [
             'Mix the crushed biscuits and melted butter in a bowl until well combined.',
-            'Press the biscuit mixture into the base of a greased springform pan to form the crust. Chill in the refrigerator for about 15 minutes.',
+            'Press the biscuit mixture into the base of a greased springform pan to form the crust.',
+            'Chill in the refrigerator for about 15 minutes.',
             'In a separate bowl, beat the cream cheese and powdered sugar until smooth.',
             'Gradually add the Amarula cream liqueur to the cream cheese mixture, mixing well.',
             'Fold in the whipped cream until everything is evenly combined.',
@@ -70,7 +71,8 @@ export const recipesList = [
         ],
         instructions: [
             'Mix the crushed biscuits and melted butter in a bowl until well combined.',
-            'Press the biscuit mixture into the base of a greased springform pan to form the crust. Chill in the refrigerator for about 15 minutes.',
+            'Press the biscuit mixture into the base of a greased springform pan to form the crust.',
+            'Chill in the refrigerator for about 15 minutes.',
             'In a separate bowl, beat the cream cheese and powdered sugar until smooth.',
             'Gradually add the Amarula cream liqueur to the cream cheese mixture, mixing well.',
             'Fold in the whipped cream until everything is evenly combined.',
@@ -107,9 +109,10 @@ export const recipesList = [
             'In a separate bowl, whisk the egg, melted butter, apricot jam, milk, and vinegar.',
             'Combine the wet and dry ingredients and mix well.',
             'Dissolve the baking soda in a little hot water and add it to the mixture.',
-            'Pour the batter into the greased baking dish and bake for about 30-35 minutes or until the pudding is golden and cooked through.',
-            'While the pudding is baking, prepare the sauce by combining all the sauce ingredients in a saucepan and heating until the sugar is dissolved.',
-            'As soon as the pudding is removed from the oven, pour the hot sauce over it, allowing it to soak in.',
+            'Pour batter into greased dish, bake 30-35 minutes until golden and cooked.',
+            'Bake pudding, heat and combine sauce ingredients until sugar dissolves.',
+            'Pour hot sauce over pudding immediately after baking, let it soak in.',
+            'Pour hot sauce over pudding immediately after baking, let it soak in.',
             'Serve the warm Malva Pudding with custard or vanilla ice cream.,'
         ]
     },

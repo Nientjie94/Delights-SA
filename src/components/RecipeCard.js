@@ -4,7 +4,7 @@ import React from 'react';
 // RecipeCard component: Displays the details of a recipe
 const RecipeCard = ({ title, ingredients, instructions, image }) => {
   return (
-    <div className="recipe-card">
+    <div className="recipe-card" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
       {/* Display the recipe image if available */}
       {image && <img src={image} alt={title} className="recipe-image" />}
       {/* Display the recipe title */}

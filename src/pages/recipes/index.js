@@ -3,7 +3,9 @@ import styles from '../../syles/Home.module.css'
 import Link from 'next/link'
 import { Fragment } from "react";
 
+// An array containing dessert recipe objects
 export const recipesList = [
+    // Recipe 1: Milktart
     {
         id: 'milktart-recipe',
         title: 'Milktart',
@@ -114,6 +116,7 @@ export const recipesList = [
 
 ]
 
+// Component for displaying the recipe selection page
 export default function RecipesSelection() {
     return (
         <Fragment>

@@ -24,7 +24,6 @@ const recipes = [
       'Refrigerate the cheesecake for at least 4 hours or until set.',
       'Serve chilled, and you can garnish with chocolate shavings or fresh fruit if desired.',
     ],
-    // Add the image file name or URL if available.
   },
   {
     title: 'Melktart Shooters',
@@ -44,7 +43,6 @@ const recipes = [
       'Pour the mixture into shot glasses and refrigerate until chilled.',
       'Before serving, garnish with ground cinnamon for an elegant touch.',
     ],
-    // Add the image file name or URL if available.
   },
   {
     title: 'Milk Tart',
@@ -75,7 +73,6 @@ const recipes = [
       'Bake in the preheated oven for about 25-30 minutes or until the tart is set and the crust is golden.',
       'Allow the milk tart to cool before serving. Serve at room temperature or chilled.',
     ],
-    // Add the image file name or URL if available.
   },
   {
     title: 'Amarula Cheesecake',
@@ -97,9 +94,7 @@ const recipes = [
       'Refrigerate the cheesecake for at least 4 hours or until set.',
       'Serve chilled, and you can garnish with chocolate shavings or fresh fruit if desired.',
     ],
-    // Add the image file name or URL if available.
   },
-  // Add more recipes here...
 ];
 
 const App = () => {

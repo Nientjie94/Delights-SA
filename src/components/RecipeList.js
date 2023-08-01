@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RecipeCard from '../components/RecipeCard.module.css';
 
+// RecipeList component: Displays a list of recipes using the RecipeCard component
 const RecipeList = ({ recipes }) => {
   return (
     <div className="recipe-list">
+      {/* Loop through the recipes array and render RecipeCard for each recipe */}
       {recipes.map((recipe, index) => (
         <RecipeCard
           key={index}
@@ -18,6 +20,7 @@ const RecipeList = ({ recipes }) => {
   );
 };
 
+// Prop types validation for the recipes prop
 RecipeList.propTypes = {
   recipes: PropTypes.arrayOf(
     PropTypes.shape({

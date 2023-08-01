@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RecipeCard from '../RecipeCard';
+import RecipeCard from '../components/RecipeCard.module.css';
 
 const RecipeList = ({ recipes }) => {
   return (

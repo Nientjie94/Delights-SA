@@ -16,30 +16,28 @@ function RecipesPage(props) {
 
     return (
         <>
-            <div className="container">
-                <div className="header">
-                    {/* Render the recipe title */}
-                    <h1>{/* { router.query.recipesId} */}</h1>
-                </div>
-                <div className="recipe-card">
-                    <div className="recipe-title">{props.recipe.title}</div>
-                    <div className="recipe-content">
-                        <img src={props.recipe.image} alt={props.recipe.title} className="recipe-image" />
-                        <div className="recipe-ingredients">
-                            <h2>Ingredients:</h2>
-                            <ul>
-                                {props.recipe.ingredients.map((ingredient, index) => (
-                                    <li key={index}>{ingredient}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="recipe-instructions">
+            <table>
+                <tr>
+                    <td>
+                        <h1>
+                            {/* { router.query.recipesId} */}
+                        </h1>
+                        <img 
+                            src={props.recipe.image} alt={props.recipe.title} className="recipe-image" 
+                        />
+                    </td>
+                    <td>
+                        <h2>Ingredients:</h2>
+                        <ul>
+                            {props.recipe.ingredients.map((ingredient, index) => (
+                                <li key={index}>{ingredient}</li>
+                            ))}
+                        </ul>
                         <h2>Instructions:</h2>
                         <p>{props.recipe.instructions}</p>
-                    </div>
-                </div>
-            </div>
+                    </td>
+                </tr>
+            </table>
         </>
     )
 }

@@ -35,8 +35,9 @@ h3 {
   color: rgb(156, 108, 3);
 }
 
-p {
-  color: darkred;
+p, ul {
+  color: black;
+  font-weight: bold;
 }
 
 img {
@@ -46,6 +47,35 @@ img {
   width: auto;
 }
 
-table {
+.table {
   overflow-x: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.responsive-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .responsive-table td {
+      display: block;
+      width: 100%;
+  }
+
+  .responsive-table h1, .responsive-table img {
+      text-align: center;
+  }
+
+  .responsive-table img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .responsive-table ul {
+      padding-left: 20px;
+  }
 }

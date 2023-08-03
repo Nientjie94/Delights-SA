@@ -16,28 +16,30 @@ function RecipesPage(props) {
 
     return (
         <>
-            <table cellSpacing={35} cellPadding={25}>
-                <tr>
-                    <td>
-                        <h1>
-                            {/* { router.query.recipesId} */}
-                        </h1>
-                        <img 
-                            src={props.recipe.image} alt={props.recipe.title} className="recipe-image" 
-                        />
-                    </td>
-                    <td>
-                        <h2>Ingredients:</h2>
-                        <ul>
-                            {props.recipe.ingredients.map((ingredient, index) => (
-                                <li key={index}>{ingredient}</li>
-                            ))}
-                        </ul>
-                        <h2>Instructions:</h2>
-                        <p>{props.recipe.instructions}</p>
-                    </td>
-                </tr>
-            </table>
+            <div className="table">
+                <table className="responsive-table" cellSpacing={35} cellPadding={25}>
+                    <tr>
+                        <td>
+                            <h1>
+                                {/* { router.query.recipesId} */}
+                            </h1>
+                            <img 
+                                src={props.recipe.image} alt={props.recipe.title} className="recipe-image" 
+                            />
+                        </td>
+                        <td>
+                            <h2>Ingredients:</h2>
+                            <ul>
+                                {props.recipe.ingredients.map((ingredient, index) => (
+                                    <li key={index}>{ingredient}</li>
+                                ))}
+                            </ul>
+                            <h2>Instructions:</h2>
+                            <p>{props.recipe.instructions}</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </>
     )
 }

@@ -22,13 +22,22 @@ function RecipesPage(props) {
                     <h1>{/* { router.query.recipesId} */}</h1>
                 </div>
                 <div className="recipe-card">
-                    {/* Render the RecipeCard component with the recipe data */}
-                    <RecipeCard
-                        image={props.recipe.image}
-                        ingredients={props.recipe.ingredients}
-                        instructions={props.recipe.instructions}
-                        title={props.recipe.title}
-                    />
+                    <div className="recipe-title">{props.recipe.title}</div>
+                    <div className="recipe-content">
+                        <img src={props.recipe.image} alt={props.recipe.title} className="recipe-image" />
+                        <div className="recipe-ingredients">
+                            <h2>Ingredients:</h2>
+                            <ul>
+                                {props.recipe.ingredients.map((ingredient, index) => (
+                                    <li key={index}>{ingredient}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="recipe-instructions">
+                        <h2>Instructions:</h2>
+                        <p>{props.recipe.instructions}</p>
+                    </div>
                 </div>
             </div>
         </>

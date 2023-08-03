@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -21,13 +22,24 @@
   margin: 0.5rem;
 }
 
+.recipe-title {
+  font-size: 24px;
+  font-weight: bond;
+  margin-bottom: 10px;
+}
+
+.recipe-content {
+  display: flex;
+}
+
 .recipe-image {
   max-width: 300px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .recipe-ingredients,
 .recipe-instructions {
+  flex: 1;
   margin-top: 20px;
 }
 

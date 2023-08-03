@@ -16,7 +16,7 @@ function RecipesPage(props) {
 
     return (
         <>
-            <table cellSpacing={35}>
+            <table cellSpacing={35} cellPadding={25}>
                 <tr>
                     <td>
                         <h1>

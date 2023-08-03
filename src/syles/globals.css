@@ -5,10 +5,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: rgb(179, 137, 98);
-  background-image: url('http://surl.li/jsodi');
+  background-image: url('http://surl.li/jsquv');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: sticky;
 }
 
 a {
@@ -21,3 +22,30 @@ a {
   box-sizing: border-box;
 }
 
+h1 {
+  color: rgb(200, 118, 10);
+}
+
+h2 {
+  color: tomato;
+}
+
+
+h3 {
+  color: rgb(156, 108, 3);
+}
+
+p {
+  color: darkred;
+}
+
+img {
+  border: 5px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  width: auto;
+}
+
+table {
+  overflow-x: auto;
+}
